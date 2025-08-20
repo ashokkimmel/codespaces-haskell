@@ -7,3 +7,4 @@ To run a haskell file, do
 ```bash
 runghc filename.hs
 ```
+* 2025-08-20 Updated build.
