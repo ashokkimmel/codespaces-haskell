@@ -1,0 +1,40 @@
+Passive 		1. Our furniture was carried inside by the movers.
+Passive 		2. The door was held open by me.
+Passive 		3. A standing ovation was received by the speaker.
+Active   		4. The reporter interviewed the movie star.
+Active   		5. Betina has played softball every Tuesday for a month.
+Passive	 	6. The landscape was carefully painted by the artist.
+Active   		7. His grandfather told the boy many stories.
+Active   		8. Mrs. Miles donates time to the women’s shelter.
+Passive 		9. A crayon was pulled from the box by the little girl.
+Active   		10. She displays her drawing with pride.
+Passive  		11. All ten pins were knocked down by the skilled bowler.
+Passive  		12. The last score was missed by the scorekeeper.
+Passive  		13. Five hundred students were graduated by the university.
+Active   		14. My aunt telephones our apartment every week.
+Passive  		15. Hot dogs are being eaten by the students.
+Active   		16. Two authors wrote the book.
+Passive	  	17. Twenty dollars had been earned by Ernest.
+Active   		18. A patient called the doctor.
+Passive  		19. The park was covered by tall pines.
+Passive  		20. A truck is being driven by the forest ranger.
+Passive  		21. The test was taken by the class.
+Active   		22. Our team has won the game.
+Passive  		23. The blaze was fought tirelessly by the firefighters.
+Passive 		24. The spelling bee has been won by Hiro.
+Passive 		25. An amusing story was written by the six-year-old.
+Active   		26. The tennis player hit the ball hard.
+Passive 		27. The plane is being flown by the new pilot.
+Active   		28. By tomorrow, a relative will have taken the Jeffersons to the airport.
+Passive 		29. The building is jealously protected by the watchdog.
+Passive 		30. The toy has been hidden by William.
+Passive 		31. Four books had been read by Rhetta in one week.
+Active   		32. The school board closed the school.
+Active   		33. The class was passing around the sign-up sheet.
+Active   		34. We will take two burgers.
+Active   		35. I have already eaten lunch.
+Passive		36. The salad dressing was tasted by Anna.
+Active  		37. My sister was singing the same song for an hour.
+Passive 		38. The spark plug had been removed by the mechanic.
+Active  		39. The mechanic replaced the headlight and tail light.
+Active   		40. The Smiths will take in the stray dog.
