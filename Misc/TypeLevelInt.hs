@@ -61,5 +61,7 @@ instance TL.KnownNat n => ToInt (Pos n) where
     intval = TL.natVal (Proxy :: Proxy n)
 instance TL.KnownNat n => ToInt (Neg n) where
     intval = negate (TL.natVal (Proxy :: Proxy n)) - 1
---class ToInt a => ToInt (Just a) where 
---    intval = intval @a 
+class ToInt a => ToInt (Just a) where 
+    intval = intval @a 
+class ToInt Nothing where 
+    intval = 0

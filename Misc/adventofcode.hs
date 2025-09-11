@@ -1,4 +1,5 @@
 import Data.List
+
 badstrings = ["ab", "cd", "pq", "xy"]
 badstringcontainer str = not (any (flip isInfixOf str) badstrings)
 vowels = "aeiou"
