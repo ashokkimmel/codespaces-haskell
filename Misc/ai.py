@@ -154,14 +154,32 @@ class Graph:
                 if i not in self.graphdict or k not in self.graphdict[i]:
                     newdict[i].add(k)
         self.graphdict = newdict
+    
     @classmethod
-    def from_edges(cls,openfile,directed = False):
-        for i in openfile.splitlines():
-            j = i.split()
-            
-
+    def from_file(cls,openfile,directed = False):
+        with open(openfile) as readfile:
+            lines = readfile.readlines()
+            mydict = collections.defaultdict(set)
+            foundweighted = False 
+            weights = {}
+            for i in lines:
+                if i.toupper().split() == ["#","WEIGHTS"]:
+                    foundweighted = True
+                j = i.split('#')[0].split()
+                if j:
+                    if not foundweighted:
+                        x = j.pop(0)
+                        mydict[int(x)] = set(map(int,j))
+                    else:
+                        intj = list(map(int,j))
+                        weights[(intj[0],intj[1])] = intj[2] 
+            if weights: return Graph(mydict,weights=weights,directed=directed)
+            return Graph(mydict,directed=directed)
+    
+    @classmethod
+    def from_str(cls,s,**kwargs):
+        
         return Graph()
-
 a = collections.defaultdict(set)
 a[0] = {1,2}
 print(Graph(a))
