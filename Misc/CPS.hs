@@ -103,8 +103,6 @@ instance Show1 ExprF where
                            (showString "DivF "
                               . a 11 arg1_achY
                                    . showSpace . a 11 arg2_achZ)
-
-
 tokenize :: String -> [Token]
 tokenize [] = []
 tokenize (c:cs)
@@ -225,7 +223,7 @@ parseFactorCPS (TLParen : ts) succ fail =
         _             -> fail)
     fail
 parseFactorCPS _ _ fail = fail
-
+-- Oldparser is the same as Kliesly  String  
 -- === Top-level Entry Point ===
 parse :: String -> Either String Expr
 parse input =

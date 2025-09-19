@@ -2,14 +2,21 @@
 {-# LANGUAGE PolyKinds #-}
 {-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE TypeOperators #-}
+{-# LANGUAGE DataKinds #-}
 {-# LANGUAGE ExplicitForAll #-}
-{-# LANGUAGE TypeFamilies,DataKinds,UndecidableInstances,AllowAmbiguousTypes #-}
+{-# LANGUAGE ConstraintKinds #-}
+{-# LANGUAGE TypeFamilies,UndecidableInstances,AllowAmbiguousTypes #-}
 {-# LANGUAGE NoGeneralisedNewtypeDeriving #-}
+{-# LANGUAGE Safe #-}
 module Main (main) where
 import Dimensions.Parser 
 import GHC.TypeLits qualified as TL 
-import Dimensions.TypeNats qualified as TL 
-
+import GHC.TypeLits (Symbol,Nat)
+import Dimensions.TypeLevelInt qualified as TI 
+import Dimensions.TypeLevelInt (Int') 
+import Data.Kind (Constraint)
+import GHC.TypeError
+import Dimensions.OrderedUnits
 type (<~~>) :: a -> a -> Constraint -- General checking type equality with custom error message
 type family (<~~>) a b where 
     a <~~> a = ()
@@ -50,6 +57,7 @@ type Tests =
     , "m^2 * s / kg^-4" <~> '[ '("m", TI.ToPosInt 2), '("s", TI.ToPosInt 1), '("kg", TI.ToPosInt 4)]
     )
 
-main :: Tests => IO ()
-main = pure ()
+joulesamount = dimension "kg*m^2/s^2"
 
+main :: Tests => IO ()
+main = print joulesamount

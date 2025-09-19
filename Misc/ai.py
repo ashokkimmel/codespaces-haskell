@@ -177,9 +177,6 @@ class Graph:
             return Graph(mydict,directed=directed)
     
     @classmethod
-    def from_str(cls,s,**kwargs):
+    def from_str(cls,s,**kwargs):        
+        return cls.from_file(io.StringIO(s),kwargs)
         
-        return Graph()
-a = collections.defaultdict(set)
-a[0] = {1,2}
-print(Graph(a))

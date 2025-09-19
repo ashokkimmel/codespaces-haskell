@@ -42,7 +42,7 @@ maintainer:         ashok.kimmel@gmail.com
 
 -- A copyright notice.
 -- copyright:
-category:           Data
+category:           Math
 build-type:         Simple
 
 -- Extra doc files to be distributed with the package, such as a CHANGELOG or a README.
